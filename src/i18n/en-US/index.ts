@@ -82,5 +82,12 @@ export default {
         errorSignout: 'Could not log out. Please try again.',
       },
     },
+
+    task: {
+      messages: {
+        errorTaskData: 'No records found, please try again later.',
+        errorGeneric: 'An error occurred, please try again later.',
+      },
+    },
   },
 };

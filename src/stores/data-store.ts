@@ -1,10 +1,12 @@
 import { defineStore } from 'pinia';
 import { UserRole } from '../enums/role.enum';
+import type { UserLoginResponse } from 'src/interfaces/login.interface';
 
 export const useAuthStore = defineStore('auth', {
   state: () => ({
     authenticated: false,
     role: UserRole.ANONYMOUS,
+    userStore: null as UserLoginResponse | null,
   }),
 
   getters: {
@@ -31,10 +33,13 @@ export const useAuthStore = defineStore('auth', {
       localStorage.setItem('role', UserRole.STANDARD_USER);
       localStorage.setItem('authenticated', 'true');
     },
-
+    createUser(userData: UserLoginResponse) {
+      this.userStore = userData;
+    },
     logout() {
       this.role = UserRole.ANONYMOUS;
       this.authenticated = false;
+      this.userStore = null;
 
       localStorage.setItem('role', UserRole.ANONYMOUS);
       localStorage.setItem('authenticated', 'false');

@@ -67,5 +67,21 @@ export default {
         errorRegister: 'Error durante el registro',
       },
     },
+    profile: {
+      titles: {
+        profile: 'Perfil',
+        name: 'Nombre',
+        email: 'Correo',
+        username: 'Nombe de usuario',
+      },
+      buttons: {
+        logOut: 'Cerrar sesión',
+      },
+      messages: {
+        errorProfile: 'No se pudo cargar el perfil. Por favor, intente nuevamente.',
+        successSignout: 'Sesión cerrada de manera exitosa',
+        errorSignout: 'No se pudo cerrar sesión. Por favor, intente nuevamente.',
+      },
+    },
   },
 };

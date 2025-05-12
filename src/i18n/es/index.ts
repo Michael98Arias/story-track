@@ -83,5 +83,11 @@ export default {
         errorSignout: 'No se pudo cerrar sesión. Por favor, intente nuevamente.',
       },
     },
+    task: {
+      messages: {
+        errorTaskData: 'No se encontro ningun registro, por favor intenta de nuevo más tarde.',
+        errorGeneric: 'Ocurrió un error, por favor intenta de nuevo más tarde.',
+      },
+    },
   },
 };

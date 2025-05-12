@@ -14,7 +14,7 @@ const routes: RouteRecordRaw[] = [
       },
       {
         path: 'task-dashboard',
-        component: () => import('src/pages/TaskDashboard/TaskDashboard.vue'),
+        component: () => import('src/pages/TaskDashboard/TaskDashboardPage.vue'),
         meta: { requiresAuth: true, roles: [UserRole.STANDARD_USER] },
       },
     ],

@@ -33,5 +33,38 @@ export default {
         errorLogin: 'Login error',
       },
     },
+    registerPage: {
+      titles: {
+        main: 'Register',
+      },
+      form: {
+        username: 'Username*',
+        email: 'Email*',
+        firstName: 'First Name*',
+        lastName: 'Last Name*',
+        password: 'Password*',
+        usernamePlaceholder: 'Enter your username',
+        emailPlaceholder: 'Enter your email',
+        firstNamePlaceholder: 'Enter your first name',
+        lastNamePlaceholder: 'Enter your last name',
+        passwordPlaceholder: 'Enter your password',
+      },
+      validation: {
+        username: 'Username must be between 3 and 20 characters.',
+        email: 'Enter a valid email address.',
+        firstName: 'First name must be between 3 and 15 characters.',
+        lastName: 'Last name must be between 3 and 15 characters.',
+        password: 'Password must contain uppercase, lowercase, a number, and a special character.',
+      },
+      validationProgress: 'Validation Progress',
+      buttons: {
+        register: 'Register',
+      },
+      messages: {
+        successRegister: 'Registration successful',
+        invalidRegister: 'Registration failed, please try again',
+        errorRegister: 'Error during registration',
+      },
+    },
   },
 };

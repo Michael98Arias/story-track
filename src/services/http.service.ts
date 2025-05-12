@@ -60,6 +60,13 @@ class HttpService {
   public async login<T>(url: string, config?: InternalAxiosRequestConfig): Promise<T> {
     return this.httpAuth.get<T, T>(url, config);
   }
+  public async register<T, K>(
+    url: string,
+    data?: K,
+    config?: InternalAxiosRequestConfig,
+  ): Promise<T> {
+    return this.httpAuth.post<T, T>(url, data, config);
+  }
   public async getTasks<T>(url: string, config?: InternalAxiosRequestConfig): Promise<T> {
     return this.httpTasks.get<T, T>(url, config);
   }

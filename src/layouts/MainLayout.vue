@@ -27,6 +27,7 @@
         <router-view />
       </q-page-container>
 
+      <UserDrawer v-model="showDrawer" />
     </q-layout>
   </div>
 </template>
@@ -35,6 +36,7 @@
 import { reactive, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useAuthStore } from '../stores/data-store';
+import UserDrawer from 'src/components/UserDrawer.vue';
 
 defineOptions({ name: 'MainLayout' });
 

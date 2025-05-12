@@ -66,5 +66,21 @@ export default {
         errorRegister: 'Error during registration',
       },
     },
+    profile: {
+      titles: {
+        profile: 'Profile',
+        name: 'Name',
+        email: 'Email',
+        username: 'Username',
+      },
+      buttons: {
+        logOut: 'Log Out',
+      },
+      messages: {
+        errorProfile: 'Failed to load profile. Please try again.',
+        successSignout: 'Session successfully closed',
+        errorSignout: 'Could not log out. Please try again.',
+      },
+    },
   },
 };
